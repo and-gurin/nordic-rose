@@ -1,0 +1,20 @@
+html {
+  font-size: 10px;
+  scroll-behavior: smooth;
+}
+
+body {
+  font-size: 1.6rem;
+  color: $color-dark;
+  margin: 0;
+}
+
+h1 {
+  @extend %font-primary;
+  @include font(normal, 500, 3.6rem, 4.3rem);
+}
+
+h2 {
+  @extend %font-primary;
+  @include font(normal, 500, 3.2rem, 3.8rem);
+}

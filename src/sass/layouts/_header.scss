@@ -1,0 +1,19 @@
+.header {
+  max-width: $mobile-width;
+  padding: 24px 0 21px 0;
+  margin: 0 auto;
+  border-bottom: 1px solid rgba(0, 0, 0, 0.16);
+
+  &__container {
+    @include flex(row, space-between, center, nowrap);
+  }
+
+  &__navigation {
+    display: none;
+  }
+}
+
+.logo__img {
+  width: 217px;
+  height: 20px;
+}
