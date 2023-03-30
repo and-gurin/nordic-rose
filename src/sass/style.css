@@ -52,14 +52,12 @@ h2 {
   transition: 0.2s;
 }
 
-.hamburger.active .hamburger__line:nth-child(2) {
-  opacity: 0;
-}
-
 .hamburger.active .hamburger__line:nth-child(1) {
   transform: translateY(12px) rotate(45deg);
 }
-
+.hamburger.active .hamburger__line:nth-child(2) {
+  opacity: 0;
+}
 .hamburger.active .hamburger__line:nth-child(3) {
   transform: translateY(-12px) rotate(-45deg);
 }
@@ -165,7 +163,7 @@ h2 {
 .about {
   max-width: 375px;
   margin: 0 auto;
-  padding: 52px 0 52px 0;
+  padding: 52px 0;
   border-bottom: 2px solid #000000;
 }
 .about__image {
@@ -199,8 +197,6 @@ h2 {
   justify-content: flex-start;
   align-items: flex-start;
   flex-wrap: nowrap;
-  max-height: 1950px;
-  overflow: hidden;
 }
 
 .card {
@@ -211,7 +207,7 @@ h2 {
   flex-wrap: nowrap;
 }
 .card__title {
-  margin: 20px 0 42px 0;
+  margin: 20px 0 42px;
   font-style: normal;
   font-weight: 500;
   font-size: 2.2rem;

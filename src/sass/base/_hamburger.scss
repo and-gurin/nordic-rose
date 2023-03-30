@@ -1,24 +1,28 @@
 .header__hamburger {
-    margin-left: auto;
+  margin-left: auto;
 }
 
 .hamburger__line {
-    display: block;
-    background-color: $color-dark;
-    height: 2px;
-    width: 40px;
-    margin: 6px auto;
-    transition: 0.2s;
+  display: block;
+  background-color: $color-dark;
+  height: 2px;
+  width: 40px;
+  margin: 6px auto;
+  transition: 0.2s;
 }
 
-.hamburger.active .hamburger__line:nth-child(2) {
-    opacity: 0;
-}
+.hamburger.active {
+  .hamburger__line {
+    &:nth-child(1) {
+      transform: translateY(12px) rotate(45deg);
+    }
 
-.hamburger.active .hamburger__line:nth-child(1) {
-    transform: translateY(12px) rotate(45deg);
-}
+    &:nth-child(2) {
+      opacity: 0;
+    }
 
-.hamburger.active .hamburger__line:nth-child(3) {
-    transform: translateY(-12px) rotate(-45deg);
+    &:nth-child(3) {
+      transform: translateY(-12px) rotate(-45deg);
+    }
+  }
 }
