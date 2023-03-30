@@ -1,0 +1,22 @@
+.about {
+  max-width: $mobile-width;
+  margin: 0 auto;
+  padding: 52px 0;
+  border-bottom: 2px solid $color-dark;
+
+  &__image {
+    width: 100%;
+  }
+
+  &__title {
+    text-align: center;
+    margin: 32px 0 24px 0;
+  }
+
+  &__subtitle {
+    text-align: center;
+    margin: 0;
+    @extend %font-additional-2;
+    @include font(normal, 400, 1.6rem, 2.7rem);
+  }
+}

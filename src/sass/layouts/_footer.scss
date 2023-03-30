@@ -1,0 +1,66 @@
+.footer {
+  background-color: $color-dark;
+  color: $color-light;
+  max-width: $mobile-width;
+  margin: 0 auto;
+  position: relative;
+  padding: 22px 0 32px 0;
+
+  &__string {
+    position: absolute;
+    left: 50%;
+    width: $desktop-width;
+    @extend %font-additional-1;
+    @include font(normal, 800, 1.6rem, 2.8rem);
+    text-transform: uppercase;
+    transform: translateX(-50%);
+    display: flex;
+    gap: 16px;
+  }
+
+  &__container {
+    text-align: center;
+  }
+
+  &__logo {
+    padding: 153px 0 25px 0;
+  }
+
+  &__subtitle {
+    max-width: 287px;
+    margin: 0 auto;
+    @extend %font-tertiary;
+    @include font(normal, 200, 1.4rem, 1.8rem);
+    text-align: center;
+  }
+
+  &__social {
+    @include flex(row, center, center, nowrap);
+    padding: 32px 0 64px 0;
+  }
+}
+
+.dim-string {
+  font-weight: 400;
+}
+
+.social-item {
+  margin: 0 20px 0 20px;
+}
+
+.social-link {
+  @extend %font-additional-1;
+  @include font(normal, 500, 1.3rem, 2.2rem);
+  text-align: center;
+  color: $color-light;
+}
+
+.copyright {
+  @extend %font-additional-1;
+  @include font(normal, 500, 1.3rem, 2.2rem);
+  text-align: center;
+  margin: 0;
+}
+
+
+

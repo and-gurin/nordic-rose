@@ -1,0 +1,23 @@
+{
+  "name": "nordic-rose",
+  "homepage": "https://github.com/and-gurin/nordic-rose.git",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "style": "sass --watch src/sass/style.scss src/sass/style.css"
+  },
+   "repository": {
+    "type": "git",
+    "url": "git+https://github.com/and-gurin/nordic-rose.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/and-gurin/nordic-rose/issues"
+  },
+  "devDependencies": {
+    "sass": "^1.60.0"
+  }
+}
