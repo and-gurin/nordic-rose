@@ -8,11 +8,14 @@
 
   &__string {
     position: absolute;
-    left: -263px;
-    width: $desktop-content-width;
+    left: 50%;
+    width: $desktop-width;
     @extend %font-additional-1;
     @include font(normal, 800, 1.6rem, 2.8rem);
     text-transform: uppercase;
+    transform: translateX(-50%);
+    display: flex;
+    gap: 16px;
   }
 
   &__container {
@@ -37,13 +40,8 @@
   }
 }
 
-.bright-string {
-  padding: 0 9.5px 0 9.5px;
-}
-
 .dim-string {
   font-weight: 400;
-  padding: 0 9.5px 0 9.5px;
 }
 
 .social-item {

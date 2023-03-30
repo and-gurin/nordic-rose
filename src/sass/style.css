@@ -101,13 +101,16 @@ h2 {
 }
 .footer__string {
   position: absolute;
-  left: -263px;
-  width: 1315px;
+  left: 50%;
+  width: 1451px;
   font-style: normal;
   font-weight: 800;
   font-size: 1.6rem;
   line-height: 2.8rem;
   text-transform: uppercase;
+  transform: translateX(-50%);
+  display: flex;
+  gap: 16px;
 }
 .footer__container {
   text-align: center;
@@ -133,13 +136,8 @@ h2 {
   padding: 32px 0 64px 0;
 }
 
-.bright-string {
-  padding: 0 9.5px 0 9.5px;
-}
-
 .dim-string {
   font-weight: 400;
-  padding: 0 9.5px 0 9.5px;
 }
 
 .social-item {
