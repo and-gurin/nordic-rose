@@ -1,19 +1,55 @@
 .header {
   max-width: $mobile-width;
-  padding: 24px 0 21px 0;
+  padding: 19px 0;
   margin: 0 auto;
   border-bottom: 1px solid rgba(0, 0, 0, 0.16);
+  @include media-desktop {
+    max-width: $desktop-width;
+    padding: 48px 0 42px 0;
+  }
 
   &__container {
     @include flex(row, space-between, center, nowrap);
   }
 
+  &__hamburger {
+    @include media-desktop {
+      display: none;
+    }
+  }
+
   &__navigation {
     display: none;
+    @include media-desktop {
+      display: block;
+    }
   }
+}
+
+.navigation {
+  margin: 0;
+  @include flex(row, space-between, center, wrap);
+  gap: 36px;
+
+  &__item {
+    list-style-type: none;
+  }
+
+  &__link {
+    text-decoration: none;
+    color: $color-dark;
+    @extend %font-tertiary;
+    @include font(normal, 500, 2.0rem, 1.4rem);
+    text-transform: uppercase;
+  }
+
 }
 
 .logo__img {
   width: 217px;
   height: 20px;
+  @include media-desktop {
+    width: 396px;
+    height: 38px;
+  }
 }

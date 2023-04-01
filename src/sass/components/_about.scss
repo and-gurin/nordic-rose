@@ -3,14 +3,31 @@
   margin: 0 auto;
   padding: 52px 0;
   border-bottom: 2px solid $color-dark;
+  &__container {
+    @include flex(column, center, center, wrap);
+  }
+
+  @include media-desktop {
+    max-width: $desktop-content-width;
+    @include flex(column, center, center, wrap);
+  }
 
   &__image {
     width: 100%;
+    @include media-desktop {
+      max-width: 854px;
+      max-height: 533px;
+    }
   }
 
   &__title {
     text-align: center;
     margin: 32px 0 24px 0;
+    @include media-desktop {
+      max-width: 852px;
+      font-size: 54px;
+      line-height: 54px;
+    }
   }
 
   &__subtitle {
@@ -18,5 +35,15 @@
     margin: 0;
     @extend %font-additional-2;
     @include font(normal, 400, 1.6rem, 2.7rem);
+    @include media-desktop {
+      max-width: 592px;
+      font-size: 20px;
+      line-height: 34px;
+      text-align: center;
+    }
+  }
+
+  @include media-desktop {
+    max-width: $desktop-content-width;
   }
 }
