@@ -14,12 +14,11 @@
     @include media-desktop {
       @include flex(column, center, center, nowrap);
     }
-
-
   }
 
   &__cards {
     @include flex(column, flex-start, flex-start, nowrap);
+    position: relative;
     @include media-desktop {
       max-width: 740px;
       flex-direction: row;
@@ -27,6 +26,21 @@
       align-items: flex-start;
       flex-wrap: wrap;
       gap: 28px;
+    }
+
+    &:before {
+      content: '';
+      position: absolute;
+      background-color: $color-dark;
+      width: 110%;
+      height: 2px;
+      top: -150px;
+      left: 50%;
+      transform: translate(-50%, 50%);
+      @include media-desktop {
+        top: -182px;
+        width: 100%;
+      }
     }
   }
 }
