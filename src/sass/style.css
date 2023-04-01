@@ -73,14 +73,12 @@ h2 {
 }
 
 .header {
-  max-width: 375px;
   padding: 19px 0;
   margin: 0 auto;
   border-bottom: 1px solid rgba(0, 0, 0, 0.16);
 }
 @media (min-width: 375px) {
   .header {
-    max-width: 1451px;
     padding: 48px 0 42px 0;
   }
 }
@@ -179,14 +177,8 @@ h2 {
 .footer {
   background-color: #000000;
   color: #FFFFFF;
-  max-width: 375px;
   margin: 0 auto;
   padding: 22px 0 32px 0;
-}
-@media (min-width: 375px) {
-  .footer {
-    max-width: 1451px;
-  }
 }
 .footer__string {
   position: absolute;
