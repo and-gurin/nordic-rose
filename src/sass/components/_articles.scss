@@ -3,7 +3,7 @@
 
   &__title {
     text-align: center;
-    @include media-desktop {
+    @include media-tablet {
       font-size: 44px;
       line-height: 52px;
     }
@@ -11,7 +11,7 @@
 
   &__container {
     position: relative;
-    @include media-desktop {
+    @include media-tablet {
       @include flex(column, center, center, nowrap);
     }
   }
@@ -19,7 +19,7 @@
   &__cards {
     @include flex(column, flex-start, flex-start, nowrap);
     position: relative;
-    @include media-desktop {
+    @include media-tablet {
       max-width: 740px;
       flex-direction: row;
       justify-content: center;
@@ -37,7 +37,7 @@
       top: -150px;
       left: 50%;
       transform: translate(-50%, 50%);
-      @include media-desktop {
+      @include media-tablet {
         top: -182px;
         width: 100%;
       }
@@ -56,8 +56,4 @@
     max-width: 262px;
   }
 
-  &__img {
-    width: 335px;
-    height: 194px;
-  }
 }

@@ -14,7 +14,7 @@
     gap: 18px;
     overflow: hidden;
     letter-spacing: 4.2px;
-    @include media-desktop {
+    @include media-tablet {
       font-size: 20px;
     }
   }
@@ -34,7 +34,7 @@
     @extend %font-tertiary;
     @include font(normal, 200, 1.4rem, 1.8rem);
     text-align: center;
-    @include media-desktop {
+    @include media-tablet {
       max-width: 488px;
       @include font(normal, 400, 1.6rem, 2.4rem);
     }
@@ -63,7 +63,7 @@
   @include font(normal, 500, 1.3rem, 2.2rem);
   text-align: center;
   color: $color-light;
-  @include media-desktop {
+  @include media-tablet {
     @include font(normal, 500, 1.6rem, 2.7rem);
   }
 }

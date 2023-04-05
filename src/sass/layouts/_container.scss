@@ -1,7 +1,7 @@
 .container {
   max-width: $mobile-content-width;
   margin: auto;
-  @include media-desktop {
+  @include media-tablet {
       max-width: $desktop-content-width;
     }
 }
