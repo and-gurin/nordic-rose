@@ -27,21 +27,6 @@
       flex-wrap: wrap;
       gap: 28px;
     }
-
-    &:before {
-      content: '';
-      position: absolute;
-      background-color: $color-dark;
-      width: 110%;
-      height: 2px;
-      top: -150px;
-      left: 50%;
-      transform: translate(-50%, 50%);
-      @include media-tablet {
-        top: -182px;
-        width: 100%;
-      }
-    }
   }
 }
 

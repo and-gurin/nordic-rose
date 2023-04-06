@@ -3,7 +3,7 @@
   margin: 0 auto;
   border-bottom: 1px solid rgba(0, 0, 0, 0.16);
   @include media-tablet {
-    padding: 48px 0 42px 0;
+    padding: 47px 0 0 0;
   }
 
   &__container {
@@ -13,6 +13,7 @@
   &__logo {
     flex-shrink: 3;
     @include flex(row, center, center, nowrap);
+    padding-bottom: 47px;
   }
 
 
@@ -38,20 +39,11 @@
 
   &__item {
     list-style-type: none;
-    position: relative;
-    z-index: 0;
+    padding-bottom: 47px;
+    border-bottom: solid transparent 2px;
+
     &:hover {
-      &:after {
-        content: '';
-        position: absolute;
-        background-color: $color-dark;
-        width: 110%;
-        height: 2px;
-        bottom: -54px;
-        left: 50%;
-        transform: translate(-50%, 50%);
-        z-index: 1;
-      }
+      border-bottom: solid $color-dark 2px;
     }
   }
 
