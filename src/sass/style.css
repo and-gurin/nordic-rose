@@ -96,7 +96,11 @@ h2 {
   justify-content: center;
   align-items: center;
   flex-wrap: nowrap;
-  padding-bottom: 47px;
+}
+@media (min-width: 860px) {
+  .header__logo {
+    padding-bottom: 47px;
+  }
 }
 @media (min-width: 860px) {
   .header__hamburger {
