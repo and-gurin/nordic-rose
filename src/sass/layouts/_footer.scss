@@ -1,25 +1,26 @@
 .footer {
   background-color: $color-dark;
   color: $color-light;
-  max-width: $mobile-width;
   margin: 0 auto;
-  position: relative;
   padding: 22px 0 32px 0;
 
   &__string {
-    position: absolute;
-    left: 50%;
-    width: $desktop-width;
+    width: 100vw;
     @extend %font-additional-1;
     @include font(normal, 800, 1.6rem, 2.8rem);
     text-transform: uppercase;
-    transform: translateX(-50%);
     display: flex;
-    gap: 16px;
+    gap: 18px;
+    overflow: hidden;
+    letter-spacing: 4.2px;
+    @include media-tablet {
+      font-size: 20px;
+    }
   }
 
   &__container {
     text-align: center;
+    @include flex(column, center, center, nowrap);
   }
 
   &__logo {
@@ -32,6 +33,10 @@
     @extend %font-tertiary;
     @include font(normal, 200, 1.4rem, 1.8rem);
     text-align: center;
+    @include media-tablet {
+      max-width: 488px;
+      @include font(normal, 400, 1.6rem, 2.4rem);
+    }
   }
 
   &__social {
@@ -44,6 +49,10 @@
   font-weight: 400;
 }
 
+.dim-string, .bright-string {
+  white-space: nowrap;
+}
+
 .social-item {
   margin: 0 20px 0 20px;
 }
@@ -53,6 +62,9 @@
   @include font(normal, 500, 1.3rem, 2.2rem);
   text-align: center;
   color: $color-light;
+  @include media-tablet {
+    @include font(normal, 500, 1.6rem, 2.7rem);
+  }
 }
 
 .copyright {

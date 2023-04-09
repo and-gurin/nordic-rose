@@ -13,7 +13,7 @@
   width: $width;
 }
 
-@mixin media-desktop {
+@mixin media-tablet {
   @media (min-width: $mobile-width) {
     @content;
   }

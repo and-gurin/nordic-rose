@@ -3,19 +3,36 @@
 
   &__title {
     text-align: center;
+    margin: 0 0 29px;
+    @include media-tablet {
+      font-size: 44px;
+      line-height: 52px;
+    }
   }
 
   &__container {
     position: relative;
+    @include media-tablet {
+      @include flex(column, center, center, nowrap);
+    }
   }
 
   &__cards {
     @include flex(column, flex-start, flex-start, nowrap);
+    position: relative;
+    @include media-tablet {
+      max-width: 740px;
+      flex-direction: row;
+      justify-content: center;
+      align-items: flex-start;
+      flex-wrap: wrap;
+      gap: 28px;
+    }
   }
 }
 
 .card {
-  @include flex(column, center, center, nowrap);
+  @include flex(column, flex-start, center, nowrap);
 
   &__title {
     margin: 20px 0 42px;
@@ -25,8 +42,4 @@
     max-width: 262px;
   }
 
-  &__img {
-    width: 335px;
-    height: 194px;
-  }
 }

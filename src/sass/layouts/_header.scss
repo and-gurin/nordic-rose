@@ -1,19 +1,79 @@
 .header {
-  max-width: $mobile-width;
-  padding: 24px 0 21px 0;
+  padding: 19px 0;
   margin: 0 auto;
   border-bottom: 1px solid rgba(0, 0, 0, 0.16);
+  @include media-tablet {
+    padding: 47px 0 0 0;
+  }
 
   &__container {
     @include flex(row, space-between, center, nowrap);
   }
 
+  &__logo {
+    flex-shrink: 3;
+    @include flex(row, center, center, nowrap);
+    @include media-tablet {
+      padding-bottom: 47px;
+    }
+
+  }
+
+
+  &__hamburger {
+    @include media-tablet {
+      display: none;
+    }
+  }
+
   &__navigation {
     display: none;
+    @include media-tablet {
+      display: block;
+      flex-shrink: 2;
+    }
+  }
+}
+
+.navigation {
+  margin: 0;
+  @include flex(row, space-between, center, wrap);
+  gap: 36px;
+
+  &__item {
+    list-style-type: none;
+    padding-bottom: 47px;
+    border-bottom: solid transparent 2px;
+
+    &:hover {
+      border-bottom: solid $color-dark 2px;
+    }
+  }
+
+  &__link {
+    text-decoration: none;
+    color: $color-dark;
+    @extend %font-tertiary;
+    @include font(normal, 500, 2.0rem, 1.4rem);
+    text-transform: uppercase;
+  }
+}
+
+.logo__ref {
+  @include flex(row, center, center, nowrap);
+  width: 217px;
+  height: 20px;
+  @include media-tablet {
+    width: 396px;
+    height: 38px;
   }
 }
 
 .logo__img {
-  width: 217px;
+  width: 100%;
   height: 20px;
+  @include media-tablet {
+    width: 100%;
+    height: 38px;
+  }
 }
