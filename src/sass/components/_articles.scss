@@ -3,6 +3,7 @@
 
   &__title {
     text-align: center;
+    margin: 0 0 29px;
     @include media-tablet {
       font-size: 44px;
       line-height: 52px;
