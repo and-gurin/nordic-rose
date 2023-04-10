@@ -79,7 +79,7 @@ h2 {
 }
 @media (min-width: 860px) {
   .header {
-    padding: 47px 0 0 0;
+    padding: 0;
   }
 }
 .header__container {
@@ -90,17 +90,11 @@ h2 {
   flex-wrap: nowrap;
 }
 .header__logo {
-  flex-shrink: 3;
   display: flex;
   flex-direction: row;
   justify-content: center;
   align-items: center;
   flex-wrap: nowrap;
-}
-@media (min-width: 860px) {
-  .header__logo {
-    padding-bottom: 47px;
-  }
 }
 @media (min-width: 860px) {
   .header__hamburger {
@@ -128,7 +122,7 @@ h2 {
 }
 .navigation__item {
   list-style-type: none;
-  padding-bottom: 47px;
+  padding: 57px 0;
   border-bottom: solid transparent 2px;
 }
 .navigation__item:hover {
@@ -178,7 +172,6 @@ h2 {
   padding: 22px 0 32px 0;
 }
 .footer__string {
-  width: 100vw;
   font-style: normal;
   font-weight: 800;
   font-size: 1.6rem;
@@ -230,6 +223,7 @@ h2 {
   align-items: center;
   flex-wrap: nowrap;
   padding: 32px 0 64px 0;
+  gap: 20px;
 }
 
 .dim-string {
@@ -240,10 +234,6 @@ h2 {
   white-space: nowrap;
 }
 
-.social-item {
-  margin: 0 20px 0 20px;
-}
-
 .social-link {
   font-style: normal;
   font-weight: 500;
@@ -251,6 +241,7 @@ h2 {
   line-height: 2.2rem;
   text-align: center;
   color: #FFFFFF;
+  transition: 0.5s ease-out;
 }
 @media (min-width: 860px) {
   .social-link {
@@ -259,6 +250,9 @@ h2 {
     font-size: 1.6rem;
     line-height: 2.7rem;
   }
+}
+.social-link:hover {
+  text-decoration: none;
 }
 
 .copyright {
@@ -283,12 +277,6 @@ h2 {
   align-items: center;
   flex-wrap: wrap;
   border-bottom: none;
-  padding-bottom: 52px;
-}
-@media (min-width: 860px) {
-  .about__container {
-    border-bottom: solid #000000 2px;
-  }
 }
 @media (min-width: 860px) {
   .about {
@@ -319,6 +307,7 @@ h2 {
     max-width: 852px;
     font-size: 54px;
     line-height: 54px;
+    margin: 44px 0 32px 0;
   }
 }
 .about__subtitle {
@@ -328,7 +317,6 @@ h2 {
   font-weight: 400;
   font-size: 1.6rem;
   line-height: 2.7rem;
-  padding: 0 55px;
 }
 @media (min-width: 860px) {
   .about__subtitle {
@@ -336,6 +324,8 @@ h2 {
     font-size: 20px;
     line-height: 34px;
     text-align: center;
+    padding: 0 23px 34px;
+    border-bottom: solid #000000 2px;
   }
 }
 @media (min-width: 860px) {
