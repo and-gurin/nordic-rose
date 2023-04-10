@@ -1,0 +1,15 @@
+.social-table {
+  width: 100%;
+  border-collapse: collapse;
+  border: 1px solid $color-border;
+  &__wrapper {
+    margin: 0 20px 32px;
+  }
+  &__row {
+    border: 1px solid $color-border;
+    padding: 15px 0;
+    text-align: center;
+  }
+}
+
+

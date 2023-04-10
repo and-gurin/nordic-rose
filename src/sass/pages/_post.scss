@@ -1,0 +1,36 @@
+.post {
+  margin: 0 auto;
+  &__body {
+    @extend %font-secondary;
+    @include font(normal, 400, 1.6rem, 2.7rem);
+    margin: 0 20px 42px;
+  }
+  &__title {
+    margin: 0 20px 19px;
+  }
+}
+
+.author {
+  @include flex(row, flex-start, center, nowrap);
+  gap: 16px;
+  @extend %font-additional-1;
+  @include font(normal, 400, 1.3rem, 1.6rem);
+  &__wrapper {
+    margin: 24px 20px;
+  }
+  &__img {
+    border-radius: 50%;
+  }
+  &__name {
+    text-transform: uppercase;
+    font-weight: 700;
+    letter-spacing: 1.3px;
+    margin: 0;
+  }
+  &__date {
+    margin: 6px 0 0;
+  }
+}
+
+
+
