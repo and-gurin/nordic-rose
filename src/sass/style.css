@@ -1,4 +1,4 @@
-h2, h1 {
+h5, h2, h1 {
   font-family: "New York Extra Large", sans-serif;
 }
 
@@ -10,7 +10,7 @@ h2, h1 {
   font-family: "New York Small", sans-serif;
 }
 
-.tags, .author, .post__figcaption, .card__title, .social-table__caption, .copyright, .social-link, .footer__string, h4 {
+.newsletter__button, .newsletter, .tags, .author, .post__figcaption, .card__title, .social-table__caption, .copyright, .social-link, .footer__string, h4 {
   font-family: "SF Pro Display", sans-serif;
 }
 
@@ -50,6 +50,13 @@ h4 {
   line-height: 3.1rem;
 }
 
+h5 {
+  font-style: normal;
+  font-weight: 500;
+  font-size: 2.9rem;
+  line-height: 2.9rem;
+}
+
 .header__hamburger {
   margin-left: auto;
 }
@@ -85,7 +92,7 @@ h4 {
 
 .header {
   padding: 19px 0;
-  margin: 0 auto;
+  margin: 0 auto 52px;
   border-bottom: 1px solid rgba(0, 0, 0, 0.16);
 }
 @media (min-width: 860px) {
@@ -278,12 +285,17 @@ h4 {
 .social-table {
   width: 100%;
   border-collapse: collapse;
-  border: 1px solid #EAEAEA;
+  border-style: hidden;
+  border-radius: 4px;
+  box-shadow: 0 4px 4px 2px rgba(0, 0, 0, 0.25);
 }
 .social-table__row {
   border: 1px solid #EAEAEA;
   padding: 15px 0;
   text-align: center;
+}
+.social-table__ref {
+  cursor: pointer;
 }
 .social-table__caption {
   font-style: normal;
@@ -295,8 +307,6 @@ h4 {
 .about {
   max-width: 860px;
   margin: 0 auto;
-  padding: 52px 0 0 0;
-  border-bottom: solid #000000 2px;
 }
 .about__container {
   display: flex;
@@ -319,6 +329,7 @@ h4 {
 }
 .about__image {
   width: 100%;
+  margin: 0 0 32px;
 }
 @media (min-width: 860px) {
   .about__image {
@@ -328,7 +339,7 @@ h4 {
 }
 .about__title {
   text-align: center;
-  margin: 32px 0 24px 0;
+  margin: 0 0 24px;
 }
 @media (min-width: 860px) {
   .about__title {
@@ -340,7 +351,7 @@ h4 {
 }
 .about__subtitle {
   text-align: center;
-  margin: 0;
+  margin: 0 0 32px;
   font-style: normal;
   font-weight: 400;
   font-size: 1.6rem;
@@ -364,6 +375,8 @@ h4 {
 
 .articles {
   padding: 56px 0 40px 0;
+  margin: 20px 0 0;
+  border-top: solid #000000 2px;
 }
 .articles__title {
   text-align: center;
@@ -423,6 +436,16 @@ h4 {
   max-width: 262px;
 }
 
+.post {
+  position: relative;
+}
+.post:after {
+  content: url("/src/image/svg/eyes.svg");
+  position: absolute;
+  left: 50%;
+  bottom: -88px;
+  transform: translateX(-50%);
+}
 .post__body {
   font-style: normal;
   font-weight: 400;
@@ -461,12 +484,16 @@ h4 {
   font-size: 1.3rem;
   line-height: 1.6rem;
 }
-.author__wrapper {
+.author__wrapper_header {
   margin: 24px 20px;
+  padding-top: 24px;
+  border-top: solid #000000 2px;
 }
-.author__img {
+.author__wrapper_footer {
+  margin: 0 20px 59px;
+}
+.author__img_header {
   border-radius: 50%;
-  float: left;
 }
 .author__img_footer {
   border-radius: 50%;
@@ -477,10 +504,7 @@ h4 {
   text-transform: uppercase;
   font-weight: 700;
   letter-spacing: 1.3px;
-  margin: 0;
-}
-.author__description_footer {
-  margin: 6px 0 0;
+  margin: 0 0 6px;
 }
 .author__name_footer {
   text-transform: uppercase;
@@ -488,12 +512,16 @@ h4 {
   letter-spacing: 1.4px;
   line-height: 22px;
 }
+.author__description_header {
+  margin: 0;
+}
 .author__description_footer {
   font-style: normal;
   font-weight: 400;
   font-size: 1.4rem;
   line-height: 2.2rem;
   letter-spacing: 0.5px;
+  margin: 6px 0 0;
 }
 
 .header-table_wrapper {
@@ -520,6 +548,58 @@ h4 {
 }
 .tags__ref:hover {
   text-decoration: none;
+}
+
+.newsletter {
+  text-align: center;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 1.6rem;
+  line-height: 2.2rem;
+  padding: 0 0 38px;
+  margin: 0 0 52px;
+  border-top: solid 10px #000000;
+  border-bottom: solid 2px #000000;
+}
+.newsletter__title {
+  padding: 0 65px;
+  margin: 52px 0 14px;
+}
+.newsletter__subtitle {
+  padding: 0 36px;
+  margin: 0 0 33px;
+}
+.newsletter__form {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: nowrap;
+}
+.newsletter__input {
+  width: 199px;
+  height: 50px;
+  font-family: inherit;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 1.6rem;
+  line-height: 1.9rem;
+  background-color: transparent;
+  border: 2px solid #000000;
+  outline: 0;
+  padding: 0 12px;
+}
+.newsletter__button {
+  font-style: normal;
+  font-weight: 700;
+  font-size: 1.6rem;
+  line-height: 1.6rem;
+  text-transform: uppercase;
+  letter-spacing: 1.3px;
+  color: #FFFFFF;
+  background-color: #000000;
+  padding: 17px;
+  border: 2px solid #000000;
 }
 
 /*# sourceMappingURL=style.css.map */

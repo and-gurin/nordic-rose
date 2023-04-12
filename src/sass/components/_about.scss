@@ -1,8 +1,6 @@
 .about {
   max-width: $mobile-width;
   margin: 0 auto;
-  padding: 52px 0 0 0;
-  border-bottom: solid $color-dark 2px;
 
   &__container {
     @include flex(column, center, center, wrap);
@@ -17,6 +15,7 @@
 
   &__image {
     width: 100%;
+    margin: 0 0 32px;
     @include media-tablet {
       max-width: 854px;
       max-height: 533px;
@@ -25,7 +24,7 @@
 
   &__title {
     text-align: center;
-    margin: 32px 0 24px 0;
+    margin: 0 0 24px;
     @include media-tablet {
       max-width: 852px;
       font-size: 54px;
@@ -36,7 +35,7 @@
 
   &__subtitle {
     text-align: center;
-    margin: 0;
+    margin: 0 0 32px;
     @extend %font-additional-2;
     @include font(normal, 400, 1.6rem, 2.7rem);
     @include media-tablet {

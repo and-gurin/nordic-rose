@@ -54,7 +54,6 @@
 </header>
 <main class="main">
     <section id="about" class="about">
-        <img class="about__image" src="./src/image/svg/about_image.svg" alt="about">
         <div class="container about__container">
             <h1 class="about__title">
                 A few words about this blog platform, Ghost, and how this site was made
@@ -63,12 +62,13 @@
                 Why Ghost (& Figma) instead of Medium, WordPress or other options?
             </p>
         </div>
+        <img class="about__image" src="./src/image/svg/about_image.svg" alt="about">
     </section>
     <section class="post">
-        <div class="author__wrapper">
+        <div class="author__wrapper_header">
             <div class="author">
-                <img class="author__img" src="./src/image/jpg/author.jpg" alt="author" width="56" height="56">
-                <div>
+                <img class="author__img_header" src="./src/image/jpg/author.jpg" alt="author" width="56" height="56">
+                <div class="author__about">
                     <p class="author__name_header">
                         Mika Matikainen
                     </p>
@@ -83,13 +83,22 @@
                 <tbody>
                 <tr>
                     <td class="social-table__row">
-                        <img src="./src/image/svg/facebook.svg" alt="facebook" width="20px" height="20px">
+                        <a class="social-table__ref" href="#">
+                            <img src="./src/image/svg/facebook.svg" alt="facebook" width="20px" height="20px">
+                        </a>
+
                     </td>
                     <td class="social-table__row">
-                        <img src="./src/image/svg/twitter.svg" alt="twitter" width="20px" height="20px">
+                        <a class="social-table__ref" href="#">
+                            <img src="./src/image/svg/twitter.svg" alt="twitter" width="20px" height="20px">
+                        </a>
+
                     </td>
                     <td class="social-table__row">
-                        <img src="./src/image/svg/whatsapp.svg" alt="whatsapp" width="20px" height="20px">
+                        <a class="social-table__ref" href="#">
+                            <img src="./src/image/svg/whatsapp.svg" alt="whatsapp" width="20px" height="20px">
+                        </a>
+
                     </td>
                 </tr>
                 </tbody>
@@ -126,13 +135,22 @@
                 <tbody>
                 <tr>
                     <td class="social-table__row">
-                        <img src="./src/image/svg/facebook.svg" alt="facebook" width="20px" height="20px">
+                        <a class="social-table__ref" href="#">
+                            <img src="./src/image/svg/facebook.svg" alt="facebook" width="20px" height="20px">
+                        </a>
+
                     </td>
                     <td class="social-table__row">
-                        <img src="./src/image/svg/twitter.svg" alt="twitter" width="20px" height="20px">
+                        <a class="social-table__ref" href="#">
+                            <img src="./src/image/svg/twitter.svg" alt="twitter" width="20px" height="20px">
+                        </a>
+
                     </td>
                     <td class="social-table__row">
-                        <img src="./src/image/svg/whatsapp.svg" alt="whatsapp" width="20px" height="20px">
+                        <a class="social-table__ref" href="#">
+                            <img src="./src/image/svg/whatsapp.svg" alt="whatsapp" width="20px" height="20px">
+                        </a>
+
                     </td>
                 </tr>
                 </tbody>
@@ -143,7 +161,7 @@
             <a class="tags__ref" href="#">product design</a>
             <a class="tags__ref" href="#">culture</a>
         </p>
-        <div class="author__wrapper">
+        <div class="author__wrapper_footer">
             <div class="author">
 
                 <div>
@@ -154,7 +172,6 @@
                     <span class="author__description_footer">
                         is a Design Founder & Advisor, Berlin School of Creative Leadership Executive MBA participant, Zippie advisor, Wolt co-founder, and Nordic Rose stakeholder.
                     </span>
-
                 </div>
             </div>
         </div>
@@ -162,7 +179,7 @@
     <section id="links" class="articles">
         <div class="container articles__container">
             <h2 class="articles__title">
-                All articles
+                What to read next
             </h2>
             <div class="articles__cards">
                 <article class="card">
@@ -287,6 +304,18 @@
                 </article>
             </div>
         </div>
+    </section>
+    <section class="newsletter">
+        <h5 class="newsletter__title">
+            Sign up for the newsletter
+        </h5>
+        <p class="newsletter__subtitle">
+            If you want relevant updates occasionally, sign up for the private newsletter. Your email is never shared.
+        </p>
+        <form class="newsletter__form">
+            <input class="newsletter__input" type="text" placeholder="Enter your email...">
+            <button class="newsletter__button" type="submit">Sign Up</button>
+        </form>
     </section>
 </main>
 <footer class="footer">

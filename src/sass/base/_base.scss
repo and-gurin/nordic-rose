@@ -23,3 +23,8 @@ h4 {
   @extend %font-additional-1;
   @include font(normal, 700, 2.6rem, 3.1rem);
 }
+
+h5 {
+  @extend %font-primary;
+  @include font(normal, 500, 2.9rem, 2.9rem);
+}
