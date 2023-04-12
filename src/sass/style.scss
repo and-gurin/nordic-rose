@@ -8,6 +8,10 @@
 @import './layouts/container';
 @import './layouts/header';
 @import './layouts/footer';
+@import './layouts/social-table';
 
 @import './components/about';
 @import './components/articles';
+
+@import 'pages/single-post/post';
+@import 'pages/single-post/newsletter';

@@ -1,12 +1,16 @@
-h2, h1 {
+h5, h2, h1 {
   font-family: "New York Extra Large", sans-serif;
 }
 
-.footer__subtitle, .navigation__link {
+.post__body {
+  font-family: "New York Medium", sans-serif;
+}
+
+.author__description_footer, .footer__subtitle, .navigation__link {
   font-family: "New York Small", sans-serif;
 }
 
-.card__title, .copyright, .social-link, .footer__string {
+.newsletter__button, .newsletter, .tags, .author, .post__figcaption, .card__title, .social-table__caption, .copyright, .social-link, .footer__string, h4 {
   font-family: "SF Pro Display", sans-serif;
 }
 
@@ -37,6 +41,20 @@ h2 {
   font-weight: 500;
   font-size: 3.2rem;
   line-height: 3.8rem;
+}
+
+h4 {
+  font-style: normal;
+  font-weight: 700;
+  font-size: 2.6rem;
+  line-height: 3.1rem;
+}
+
+h5 {
+  font-style: normal;
+  font-weight: 500;
+  font-size: 2.9rem;
+  line-height: 2.9rem;
 }
 
 .header__hamburger {
@@ -74,7 +92,7 @@ h2 {
 
 .header {
   padding: 19px 0;
-  margin: 0 auto;
+  margin: 0 auto 52px;
   border-bottom: 1px solid rgba(0, 0, 0, 0.16);
 }
 @media (min-width: 860px) {
@@ -264,11 +282,31 @@ h2 {
   margin: 0;
 }
 
+.social-table {
+  width: 100%;
+  border-collapse: collapse;
+  border-style: hidden;
+  border-radius: 4px;
+  box-shadow: 0 4px 4px 2px rgba(0, 0, 0, 0.25);
+}
+.social-table__row {
+  border: 1px solid #EAEAEA;
+  padding: 15px 0;
+  text-align: center;
+}
+.social-table__ref {
+  cursor: pointer;
+}
+.social-table__caption {
+  font-style: normal;
+  font-weight: 500;
+  font-size: 1.4rem;
+  line-height: 1.6rem;
+}
+
 .about {
   max-width: 860px;
   margin: 0 auto;
-  padding: 52px 0 0 0;
-  border-bottom: solid #000000 2px;
 }
 .about__container {
   display: flex;
@@ -291,6 +329,7 @@ h2 {
 }
 .about__image {
   width: 100%;
+  margin: 0 0 32px;
 }
 @media (min-width: 860px) {
   .about__image {
@@ -300,7 +339,7 @@ h2 {
 }
 .about__title {
   text-align: center;
-  margin: 32px 0 24px 0;
+  margin: 0 0 24px;
 }
 @media (min-width: 860px) {
   .about__title {
@@ -312,7 +351,7 @@ h2 {
 }
 .about__subtitle {
   text-align: center;
-  margin: 0;
+  margin: 0 0 32px;
   font-style: normal;
   font-weight: 400;
   font-size: 1.6rem;
@@ -336,6 +375,8 @@ h2 {
 
 .articles {
   padding: 56px 0 40px 0;
+  margin: 20px 0 0;
+  border-top: solid #000000 2px;
 }
 .articles__title {
   text-align: center;
@@ -393,6 +434,172 @@ h2 {
   line-height: 2.6rem;
   text-align: center;
   max-width: 262px;
+}
+
+.post {
+  position: relative;
+}
+.post:after {
+  content: url("/src/image/svg/eyes.svg");
+  position: absolute;
+  left: 50%;
+  bottom: -88px;
+  transform: translateX(-50%);
+}
+.post__body {
+  font-style: normal;
+  font-weight: 400;
+  font-size: 1.6rem;
+  line-height: 2.7rem;
+  margin: 0 20px 42px;
+}
+.post__title {
+  margin: 0 20px 19px;
+}
+.post__figure {
+  text-align: center;
+  margin: 0 auto;
+}
+.post__img {
+  display: block;
+  margin: 0 auto;
+}
+.post__figcaption {
+  font-style: normal;
+  font-weight: 500;
+  font-size: 1.3rem;
+  line-height: 1.8rem;
+  margin: 12px 35px 42px;
+}
+
+.author {
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-start;
+  align-items: center;
+  flex-wrap: nowrap;
+  gap: 16px;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 1.3rem;
+  line-height: 1.6rem;
+}
+.author__wrapper_header {
+  margin: 24px 20px;
+  padding-top: 24px;
+  border-top: solid #000000 2px;
+}
+.author__wrapper_footer {
+  margin: 0 20px 59px;
+}
+.author__img_header {
+  border-radius: 50%;
+}
+.author__img_footer {
+  border-radius: 50%;
+  float: left;
+  margin: 8px 16px 12px 0;
+}
+.author__name_header {
+  text-transform: uppercase;
+  font-weight: 700;
+  letter-spacing: 1.3px;
+  margin: 0 0 6px;
+}
+.author__name_footer {
+  text-transform: uppercase;
+  font-weight: 700;
+  letter-spacing: 1.4px;
+  line-height: 22px;
+}
+.author__description_header {
+  margin: 0;
+}
+.author__description_footer {
+  font-style: normal;
+  font-weight: 400;
+  font-size: 1.4rem;
+  line-height: 2.2rem;
+  letter-spacing: 0.5px;
+  margin: 6px 0 0;
+}
+
+.header-table_wrapper {
+  margin: 0 20px 32px;
+}
+
+.footer-table_wrapper {
+  margin: 0 20px 24px;
+}
+
+.tags {
+  font-style: normal;
+  font-weight: 500;
+  font-size: 1.4rem;
+  line-height: 1.6rem;
+  margin: 0 20px 34px;
+  padding-bottom: 34px;
+  border-bottom: dotted #000000 1px;
+  border-image-source: url("data:image/svg+xml,%3csvg width='100%25' height='100%25' xmlns='http://www.w3.org/2000/svg'%3e%3crect width='100%25' height='100%25' fill='none' stroke='black' stroke-width='8' stroke-dasharray='2%2c 12' stroke-dashoffset='10' stroke-linecap='butt'/%3e%3c/svg%3e");
+  border-image-slice: 2;
+}
+.tags__ref {
+  color: #000000;
+}
+.tags__ref:hover {
+  text-decoration: none;
+}
+
+.newsletter {
+  text-align: center;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 1.6rem;
+  line-height: 2.2rem;
+  padding: 0 0 38px;
+  margin: 0 0 52px;
+  border-top: solid 10px #000000;
+  border-bottom: solid 2px #000000;
+}
+.newsletter__title {
+  padding: 0 65px;
+  margin: 52px 0 14px;
+}
+.newsletter__subtitle {
+  padding: 0 36px;
+  margin: 0 0 33px;
+}
+.newsletter__form {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: nowrap;
+}
+.newsletter__input {
+  width: 199px;
+  height: 50px;
+  font-family: inherit;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 1.6rem;
+  line-height: 1.9rem;
+  background-color: transparent;
+  border: 2px solid #000000;
+  outline: 0;
+  padding: 0 12px;
+}
+.newsletter__button {
+  font-style: normal;
+  font-weight: 700;
+  font-size: 1.6rem;
+  line-height: 1.6rem;
+  text-transform: uppercase;
+  letter-spacing: 1.3px;
+  color: #FFFFFF;
+  background-color: #000000;
+  padding: 17px;
+  border: 2px solid #000000;
 }
 
 /*# sourceMappingURL=style.css.map */

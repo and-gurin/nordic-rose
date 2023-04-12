@@ -1,5 +1,7 @@
 .articles {
   padding: 56px 0 40px 0;
+  margin: 20px 0 0;
+  border-top: solid $color-dark 2px;
 
   &__title {
     text-align: center;

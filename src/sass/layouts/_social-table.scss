@@ -1,0 +1,23 @@
+.social-table {
+  width: 100%;
+  border-collapse: collapse;
+  border-style: hidden;
+  border-radius: 4px;
+  box-shadow: 0 4px 4px 2px rgba(0, 0, 0, 0.25);
+
+  &__row {
+    border: 1px solid $color-border;
+    padding: 15px 0;
+    text-align: center;
+  }
+
+  &__ref {
+    cursor: pointer;
+
+  }
+
+  &__caption {
+    @extend %font-additional-1;
+    @include font(normal, 500, 1.4rem, 1.6rem);
+  }
+}
