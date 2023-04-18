@@ -13,10 +13,20 @@
 
   &__ref {
     cursor: pointer;
+    display: inline-flex;
+    align-items: center;
+    text-decoration: none;
+    color: $color-dark;
   }
 
   &__caption {
     @extend %font-additional-1;
     @include font(normal, 500, 1.4rem, 1.6rem);
+
+    @include media-tablet {
+      font-size: 1.6rem;
+      line-height: 2.6rem;
+      margin-left: 16px;
+    }
   }
 }

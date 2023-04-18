@@ -5,8 +5,12 @@
     content: url('/src/image/svg/eyes.svg');
     position: absolute;
     left: 50%;
-    bottom: -88px;
+    bottom: -125px;
     transform: translateX(-50%);
+
+    @include media-tablet {
+      bottom: -165px;
+    }
   }
 
   &__body {
@@ -164,6 +168,7 @@
 }
 
 .footer-table-wrapper {
+  height: 54px;
   margin: 0 20px 24px;
 
   @include media-tablet {
