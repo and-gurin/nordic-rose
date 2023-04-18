@@ -1,9 +1,12 @@
 .header {
-  padding: 19px 0;
+  padding: 19px 20px;
   margin: 0 auto 52px;
   border-bottom: 1px solid rgba(0, 0, 0, 0.16);
   @include media-tablet {
-    padding: 0;
+    max-width: $desktop-content-width;
+  }
+  &_post {
+    margin: 0 auto 76px;
   }
 
   &__container {
@@ -31,6 +34,7 @@
 
 .navigation {
   margin: 0;
+  padding: 0;
   @include flex(row, space-between, center, wrap);
   gap: 36px;
 

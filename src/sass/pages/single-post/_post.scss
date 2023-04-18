@@ -13,10 +13,24 @@
     @extend %font-secondary;
     @include font(normal, 400, 1.6rem, 2.7rem);
     margin: 0 20px 42px;
+
+    @include media-tablet {
+      margin: 0 auto 52px;
+      max-width: 640px;
+    }
+  }
+
+  &__body_last {
+    margin-bottom: 77px;
   }
 
   &__title {
     margin: 0 20px 19px;
+
+    @include media-tablet {
+      margin: 0 auto 24px;
+      max-width: 640px;
+    }
   }
 
   &__figure {
@@ -33,6 +47,24 @@
     @extend %font-additional-1;
     @include font(normal, 500, 1.3rem, 1.8rem);
     margin: 12px 35px 42px;
+
+    @include media-tablet {
+      max-width: 481px;
+      font-size: 1.6rem;
+      line-height: 2.2rem;
+      margin: 12px auto 52px;
+    }
+  }
+}
+
+.author-social-wrapper {
+  border-top: solid $color-dark 2px;
+  margin: 0 20px;
+
+  @include media-tablet {
+    @include flex(row, space-between, center, nowrap);
+    max-width: 640px;
+    margin: 0 auto;
   }
 }
 
@@ -42,14 +74,26 @@
   @extend %font-additional-1;
   @include font(normal, 400, 1.3rem, 1.6rem);
 
+  @include media-tablet {
+    font-size: 1.6rem;
+    line-height: 1.9rem;
+  }
+
   &__wrapper_header {
-    margin: 24px 20px;
-    padding-top: 24px;
-    border-top: solid $color-dark 2px;
+    margin: 24px 0;
+
+    @include media-tablet {
+      margin: 24px 0;
+    }
   }
 
   &__wrapper_footer {
-    margin: 0 20px 59px;
+    margin: 0 20px 91px;
+
+    @include media-tablet {
+      max-width: 640px;
+      margin: 0 auto 132px;
+    }
   }
 
   &__img_header {
@@ -88,12 +132,43 @@
   }
 }
 
-.header-table_wrapper {
-  margin: 0 20px 32px;
+.header-table-wrapper_two-row {
+  display: none;
+
+  @include media-tablet {
+    display: block;
+    width: 140px;
+    height: 44px;
+  }
 }
 
-.footer-table_wrapper {
+.header-table-wrapper {
+  padding-top: 24px;
+  margin: 0 0 32px;
+  height: 54px;
+
+  @include media-tablet {
+    display: none;
+  }
+}
+
+.footer-table-wrapper_two-row {
+  display: none;
+
+  @include media-tablet {
+    display: block;
+    width: 640px;
+    height: 64px;
+    margin: 0 auto 32px;
+  }
+}
+
+.footer-table-wrapper {
   margin: 0 20px 24px;
+
+  @include media-tablet {
+    display: none;
+  }
 }
 
 .tags {
@@ -111,6 +186,13 @@
     &:hover {
       text-decoration: none;
     }
+  }
+
+  @include media-tablet {
+    font-size: 1.6rem;
+    line-height: 2.0rem;
+    max-width: 640px;
+    margin: 0 auto;
   }
 }
 

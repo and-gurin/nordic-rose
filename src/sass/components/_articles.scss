@@ -1,7 +1,14 @@
 .articles {
   padding: 56px 0 40px 0;
-  margin: 20px 0 0;
+  margin: 20px auto 0;
   border-top: solid $color-dark 2px;
+
+  &_main-page {
+    @include media-tablet {
+      max-width: 740px;
+      border-top: solid $color-dark 2px;
+    }
+  }
 
   &__title {
     text-align: center;
