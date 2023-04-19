@@ -395,7 +395,7 @@ h5 {
 
 .articles {
   padding: 56px 0 40px 0;
-  margin: 20px auto 0;
+  margin: 0 auto;
   border-top: solid #000000 2px;
 }
 @media (min-width: 860px) {
@@ -503,7 +503,7 @@ h5 {
     max-width: 640px;
   }
 }
-.post__body_last {
+.post p:last-of-type {
   margin-bottom: 77px;
 }
 .post__title {
