@@ -12,8 +12,8 @@
     <title>Nordic Rose</title>
 </head>
 <body>
-<header class="header">
-    <div class="container header__container">
+<header class="header  header_post">
+    <div class="header__container">
         <div class="header__logo">
             <a class="logo__ref" href="#">
                 <img class="logo__img" src="./src/image/svg/nordic_rose_logo_dark.svg" alt="logo">
@@ -54,55 +54,72 @@
 </header>
 <main class="main">
     <section id="about" class="about">
-        <div class="container about__container">
+        <div class="about__container">
             <h1 class="about__title">
                 A few words about this blog platform, Ghost, and how this site was made
             </h1>
-            <p class="about__subtitle">
+            <p class="about__subtitle about__subtitle_post">
                 Why Ghost (& Figma) instead of Medium, WordPress or other options?
             </p>
         </div>
-        <img class="about__image" src="./src/image/svg/about_image.svg" alt="about" width="854" height="533">
+        <img class="about__image_post" src="./src/image/svg/about_image.svg" alt="about">
     </section>
     <section class="post">
-        <div class="author__wrapper_header">
-            <div class="author">
-                <img class="author__img_header" src="./src/image/jpg/author.jpg" alt="author" width="56" height="56">
-                <div class="author__about">
-                    <p class="author__name_header">
-                        Mika Matikainen
-                    </p>
-                    <p class="author__description_header">
-                        <time datetime="2020-04-15">Apr 15, 2020</time> · 4 min read
-                    </p>
+        <div class="author-social-wrapper">
+            <div class="author__wrapper_header">
+                <div class="author">
+                    <img class="author__img_header" src="./src/image/jpg/author.jpg" alt="author" width="56" height="56">
+                    <div class="author__about">
+                        <p class="author__name_header">
+                            Mika Matikainen
+                        </p>
+                        <p class="author__description_header">
+                            <time datetime="2020-04-15">Apr 15, 2020</time> · 4 min read
+                        </p>
+                    </div>
                 </div>
             </div>
-        </div>
-        <div class="header-table_wrapper">
-            <table class="social-table">
-                <tbody>
-                <tr>
-                    <td class="social-table__row">
-                        <a class="social-table__ref" href="#">
-                            <img src="./src/image/svg/facebook.svg" alt="facebook" width="20px" height="20px">
-                        </a>
-
-                    </td>
-                    <td class="social-table__row">
-                        <a class="social-table__ref" href="#">
-                            <img src="./src/image/svg/twitter.svg" alt="twitter" width="20px" height="20px">
-                        </a>
-
-                    </td>
-                    <td class="social-table__row">
-                        <a class="social-table__ref" href="#">
-                            <img src="./src/image/svg/whatsapp.svg" alt="whatsapp" width="20px" height="20px">
-                        </a>
-
-                    </td>
-                </tr>
-                </tbody>
-            </table>
+            <div class="header-table-wrapper">
+                <table class="social-table">
+                    <tbody>
+                    <tr>
+                        <td class="social-table__row">
+                            <a class="social-table__ref" href="#">
+                                <img src="./src/image/svg/facebook.svg" alt="facebook" width="20px" height="20px">
+                            </a>
+                        </td>
+                        <td class="social-table__row">
+                            <a class="social-table__ref" href="#">
+                                <img src="./src/image/svg/twitter.svg" alt="twitter" width="20px" height="20px">
+                            </a>
+                        </td>
+                        <td class="social-table__row">
+                            <a class="social-table__ref" href="#">
+                                <img src="./src/image/svg/whatsapp.svg" alt="whatsapp" width="20px" height="20px">
+                            </a>
+                        </td>
+                    </tr>
+                    </tbody>
+                </table>
+            </div>
+            <div class="header-table-wrapper_two-row">
+                <table class="social-table">
+                    <tbody>
+                    <tr>
+                        <td class="social-table__row">
+                            <a class="social-table__ref" href="#">
+                                <img src="./src/image/svg/facebook.svg" alt="facebook" width="22px" height="22px">
+                            </a>
+                        </td>
+                        <td class="social-table__row">
+                            <a class="social-table__ref" href="#">
+                                <img src="./src/image/svg/twitter.svg" alt="twitter" width="22px" height="22px">
+                            </a>
+                        </td>
+                    </tr>
+                    </tbody>
+                </table>
+            </div>
         </div>
         <p class="post__body">
             This lovely web is full of everything which is created I don't know what in mind, considering that sometimes totally bonkers stuff might be highly relevant if it has the right kind of thinking behind it.
@@ -129,8 +146,7 @@
             <br>
             Luckily, in the middle of all that, there are some pockets of content that offer delightfully valuable contrast to cursory wisdom in some of the established channels.
         </p>
-        <div class="footer-table_wrapper">
-            <span class="social-table__caption">Share:</span>
+        <div class="footer-table-wrapper">
             <table class="social-table">
                 <tbody>
                 <tr>
@@ -138,32 +154,48 @@
                         <a class="social-table__ref" href="#">
                             <img src="./src/image/svg/facebook.svg" alt="facebook" width="20px" height="20px">
                         </a>
-
                     </td>
                     <td class="social-table__row">
                         <a class="social-table__ref" href="#">
                             <img src="./src/image/svg/twitter.svg" alt="twitter" width="20px" height="20px">
                         </a>
-
                     </td>
                     <td class="social-table__row">
                         <a class="social-table__ref" href="#">
                             <img src="./src/image/svg/whatsapp.svg" alt="whatsapp" width="20px" height="20px">
                         </a>
-
                     </td>
                 </tr>
                 </tbody>
             </table>
         </div>
-        <p class="tags">
+        <div class="footer-table-wrapper_two-row">
+            <table class="social-table">
+                <tbody>
+                <tr>
+                    <td class="social-table__row">
+                        <a class="social-table__ref" href="#">
+                            <img src="./src/image/svg/facebook.svg" alt="facebook" width="22px" height="22px">
+                            <span class="social-table__caption">Share on Facebook</span>
+                        </a>
+                    </td>
+                    <td class="social-table__row">
+                        <a class="social-table__ref" href="#">
+                            <img src="./src/image/svg/twitter.svg" alt="twitter" width="22px" height="22px">
+                            <span class="social-table__caption">Share on Twitter</span>
+                        </a>
+                    </td>
+                </tr>
+                </tbody>
+            </table>
+        </div>
+        <div class="tags">
             Tags:
             <a class="tags__ref" href="#">product design</a>
             <a class="tags__ref" href="#">culture</a>
-        </p>
+        </div>
         <div class="author__wrapper_footer">
             <div class="author">
-
                 <div>
                     <img class="author__img_footer" src="./src/image/jpg/author.jpg" alt="author" width="56" height="56">
                     <span class="author__name_footer">
@@ -181,10 +213,10 @@
             <h2 class="articles__title">
                 What to read next
             </h2>
-            <div class="articles__cards">
+            <div class="articles__cards_post">
                 <article class="card">
                     <picture>
-                        <source media="(max-width: 859px)" srcset="src/image/articles/article-1-335w.png">
+                        <source media="(max-width: 859px)" srcset="src/image/articles/article-2-335w.png">
                         <source media="(min-width: 860px)" srcset="src/image/articles/article-1-304w.png">
                         <img class="card__img" src="src/image/articles/article-1-335w.png" alt="article_1" width="335" height="194">
                     </picture>
